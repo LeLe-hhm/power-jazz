@@ -1,0 +1,45 @@
+.home-page {
+  .ant-card {
+    height: 100%;
+  }
+
+  .mt-4 {
+    margin-top: 16px;
+  }
+
+  .ant-statistic {
+    .ant-statistic-title {
+      margin-bottom: 8px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+
+    .anticon {
+      margin-right: 8px;
+      color: #1890ff;
+    }
+  }
+
+  .news-card {
+    .ant-typography {
+      margin-bottom: 12px;
+    }
+
+    h5.ant-typography {
+      color: #1890ff;
+    }
+
+    .ant-divider {
+      margin: 16px 0;
+    }
+  }
+
+  .ant-card-type-inner {
+    .ant-card-head {
+      background: #fafafa;
+    }
+
+    .ant-card-body {
+      padding: 16px;
+    }
+  }
+}

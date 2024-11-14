@@ -1,0 +1,67 @@
+.user-list-page {
+  .table-toolbar {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .ant-space {
+      flex-wrap: wrap;
+    }
+  }
+
+  .table-container {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #d9d9d9;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f0f0f0;
+    }
+
+    .ant-table-wrapper {
+      min-width: 1500px;
+    }
+
+    .ant-table {
+      .ant-table-cell {
+        white-space: nowrap;
+      }
+
+      .ant-tag {
+        min-width: 58px;
+        text-align: center;
+      }
+    }
+  }
+
+  // 弹框样式
+  .ant-modal {
+    .ant-form-item {
+      margin-bottom: 20px;
+    }
+  }
+
+  // 响应式调整
+  @media screen and (max-width: 576px) {
+    .ant-card-body {
+      padding: 12px !important;
+    }
+
+    .table-toolbar {
+
+      .ant-input-affix-wrapper,
+      .ant-btn {
+        width: 100% !important;
+      }
+    }
+  }
+}

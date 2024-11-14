@@ -1,0 +1,25 @@
+.profile-page {
+  .avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+
+    .avatar {
+      border: 2px solid #f0f0f0;
+    }
+  }
+
+  .ant-form {
+    max-width: 500px;
+  }
+
+  // 响应式调整
+  @media screen and (max-width: 768px) {
+    .avatar-section {
+      padding: 16px 0;
+      margin-bottom: 24px;
+    }
+  }
+}

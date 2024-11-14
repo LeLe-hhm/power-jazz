@@ -1,0 +1,63 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  background: transparent;
+
+  .login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    .title {
+      margin-bottom: 24px;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 24px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 24px;
+
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-input-affix-wrapper {
+      .anticon {
+        color: rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    // 验证码按钮样式
+    .ant-btn:not(.ant-btn-primary) {
+      min-width: 120px;
+    }
+  }
+}
+
+// 响应式调整
+@media screen and (max-width: 576px) {
+  .login-page {
+    padding: 16px;
+    background-position: center;
+
+    .login-card {
+      padding: 16px;
+
+      .ant-btn:not(.ant-btn-primary) {
+        min-width: 100px;
+      }
+    }
+  }
+}

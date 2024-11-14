@@ -1,0 +1,21 @@
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    background: #1890ff;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0.75;
+  }
+
+  /* 加快过渡动画 */
+  .bar {
+    transition: all 200ms ease; // 减少过渡时间
+  }
+}
+
+/* 其他样式保持不变... */
